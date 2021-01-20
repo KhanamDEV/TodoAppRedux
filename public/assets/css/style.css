@@ -1,0 +1,38 @@
+*{margin: 0; padding: 0}
+*, *:before, *:after{box-sizing: border-box}
+
+@font-face {
+    font-family: "SlimMedium";
+    src: url("../font/TypesketchbookNoyhGeometricMedium.otf") format("truetype");
+
+}
+
+:root{
+    --color-orange: #fe950f;
+    --color-grey: #444444;
+    --color-brown: #333333;
+}
+
+body{font-family: "SlimMedium"; font-size: 16px}
+main#main-container{margin-top: 40px}
+
+section#wrap-todo .container{background-color: var(--color-brown); margin: 0 auto;border-radius: 20px; padding: 30px 120px}
+section#wrap-todo h1{color: white; text-align: center}
+
+section .bg-grey{background-color: var(--color-grey); padding: 10px}
+section#wrap-form-todo.padding-invalid{padding-bottom: 25px}
+section#wrap-form-todo form .form-group{margin-bottom: 0}
+section#wrap-form-todo form .form-group label{color: white; font-size: 18px; margin-bottom: 5px}
+section#wrap-form-todo form .form-group input{border-radius: 10px; border-color: var(--color-orange); height: 40px}
+section#wrap-form-todo form .btn-action{display: flex;align-items: flex-end; justify-content: flex-end}
+section#wrap-form-todo form .btn-action button{border-radius: 25px; background-color: var(--color-orange); color: white; width: 90%}
+section#wrap-form-todo form .btn-action button:hover{background-color: #b77016}
+section#wrap-form-todo form .form-group span{color: #dc3545; font-size: 90%;position: absolute}
+
+section#wrap-task .item-task{display: flex; margin-bottom: 2px; justify-content: space-between; align-items: center}
+section#wrap-task .item-task h3{color: var(--color-orange); font-size: 40px; margin-bottom: 0}
+section#wrap-task .item-task.success h3{color: #777777; text-decoration: line-through}
+section#wrap-task .item-task.success p{color: #777777; text-decoration: line-through}
+section#wrap-task .item-task p{margin-bottom: 0; color: white; font-size: 18px}
+section#wrap-task .item-task .action-task button:first-child{border-radius: 25px; border: 1px solid #45b188; color: #45b188; width: 120px}
+section#wrap-task .item-task .action-task button:last-child{border-radius: 25px; border: 1px solid #ae2f2f; color: #ae2f2f; width: 120px; margin-left: 10px}
